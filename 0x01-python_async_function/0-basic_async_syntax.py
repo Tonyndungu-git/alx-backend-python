@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-
 """random number wait """
 import asyncio
 import random
 
+
 async def wait_random(max_delay=10):
     """ random wait"""
-    delay = random.uniform(0, max_delay)
+    delay = random.random() *  max_delay
     await asyncio.sleep(delay)
     return delay
